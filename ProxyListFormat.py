@@ -7,7 +7,7 @@ import sys
 ruta = sys.argv[1]
 tipo_prox = sys.argv[2]
 
-def ParcearArchivo(ruta_ar,tipo_p):
+def ParsearArchivo(ruta_ar,tipo_p):
     # Abrir archivo en modo lectura
     print(ruta_ar)
     print(tipo_p)
@@ -22,7 +22,7 @@ def ParcearArchivo(ruta_ar,tipo_p):
         lista_proxys.append(proxy)
     return lista_proxys
 
-lista_prox = ParcearArchivo(ruta,tipo_prox)
+lista_prox = ParsearArchivo(ruta,tipo_prox)
 
 for proxy in lista_prox:
     print(proxy)
